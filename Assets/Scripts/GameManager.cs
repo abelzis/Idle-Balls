@@ -30,7 +30,5 @@ public class GameManager : MonoBehaviour
         moneyAmount += Mathf.Round((float)amount);
     }
 
-
-
     // UI functions
 }

@@ -50,10 +50,7 @@ public class BallSpawner : MonoBehaviour
                     //Ray ray = new Ray(Input.GetTouch(i).position, Vector3.down);
                     //RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
 
-                    Vector3 wp = Camera.main.ScreenToWorldPoint(Input.GetTouch(i).position);
-                    var touchPos = new Vector2(wp.x, wp.y);
-
-                    Collider2D hit = Physics2D.OverlapPoint(touchPos);
+                    Collider2D hit = CameraHelper.GetColliderHit(Input.GetTouch(i).position);
 
                     for (int j = 0; j < ballList.Count; j++)    // loop through each ball
                     {

@@ -5,6 +5,8 @@ using UnityEngine;
 public class ObstacleStats : MonoBehaviour
 {
     public bool isUnlocked;
+    public bool isPassedThrough;
+    public double unlockPrice;
 
     public double obstacleValue;
     public double obstacleValueMultiplier;

@@ -23,7 +23,7 @@ public class ControlBorders : MonoBehaviour
         //leftBorder.transform.position = new Vector3(-1f*Screen.width/2, Screen.height, leftBorder.transform.position.z);
     }
 
-    public Bounds OrthographicBounds(Camera camera)
+    public static Bounds OrthographicBounds(Camera camera)
     {
         float screenAspect = (float)Screen.width / (float)Screen.height;
         float cameraHeight = camera.orthographicSize * 2;
